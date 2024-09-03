@@ -21,5 +21,4 @@ RUN if [ "$(uname -m)" = "armv7l" ]; then \
 # Copy the application code
 COPY . /app
 
-# Default command
-CMD ["python", "tgcli.py"]
+ENTRYPOINT [ "python", "tgcli.py" ]
